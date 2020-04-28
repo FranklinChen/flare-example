@@ -1,6 +1,7 @@
 module Main where
 
 import Prelude
+import Effect (Effect)
 import Math (round)
 import Data.NonEmpty ((:|))
 import Flare (UI, number, radioGroup, runFlare)
@@ -37,4 +38,5 @@ flare = render <$> number "Temperature" 100.0
 
   where unit label = radioGroup label (Celsius :| [Kelvin, Fahrenheit]) toString
 
+main :: Effect Unit
 main = runFlare "controls" "output" flare

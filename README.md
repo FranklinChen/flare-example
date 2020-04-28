@@ -4,11 +4,11 @@ A simple demonstration project if you would like to test [purescript-flare](http
 
 ## Quick start
 
-You will need Purescript and pulp. See the [Purescript website](http://www.purescript.org/download/) for installation instructions. Then, run:
+You will need Purescript and [Spago](https://github.com/purescript/spago). See the [Purescript website](http://www.purescript.org/download/) for installation instructions. Then, run:
 
 ```
 git clone https://github.com/sharkdp/flare-example.git
 cd flare-example
-bower install
-pulp build -O -t main.js
+spago install
+spago bundle-app --to index.js
 ```
